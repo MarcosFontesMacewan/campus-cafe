@@ -157,10 +157,16 @@ button {
 .container>* {
     grid-column: 1 / -1;
     }
+[class="content panel"] {
+    grid-column: 1 / 7; 
+    }
+[class="sidebar panel"] {
+    grid-column: 7 / -1; 
+    }
  .menu-flex {
-   flex-direction: row;
-   flex-wrap: wrap; 
-   justify-content: space-between;
+    flex-direction: row;
+    flex-wrap: wrap; 
+    justify-content: space-between;
 }
 }
 /* TODO (CSS #4): Laptop Mode
@@ -171,6 +177,16 @@ button {
 */
 @media (min-width: 992px) {
  /* add properties here */
+[class="nav panel"] {
+    grid-column: 1 / 5; 
+    }
+[class="content panel"] {
+    grid-column: 5 / 9; 
+    }
+[class="sidebar panel"] {
+    grid-column: 9 / -1; 
+    }
+
  .menu-flex {
    flex-direction: row;
    flex-wrap: wrap;  
